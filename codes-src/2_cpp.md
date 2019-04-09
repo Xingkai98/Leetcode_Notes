@@ -27,7 +27,9 @@ public:
 };
 ```
 #### 数据
-Runtime: 436 ms 属于最慢的<br/>Memory Usage: 9.3 MB 击败99.07%<br/>额。。时间最慢，空间最快。。<br/>基本可以推测出，还有一种主流的做法是正好相反：时间快，空间大的。<br/>估计是STL中的另一个数据结构。
+Runtime: 28 ms, faster than 98.43%<br/>Memory Usage: 10.4 MB, less than 99.27%
+
+莫名这次第一次就写到了几乎最优的情况
 
 
-[back](../notes-src/1.md)
+[back](../notes-src/2.md)
