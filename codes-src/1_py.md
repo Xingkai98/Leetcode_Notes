@@ -24,4 +24,4 @@ Runtime: 3972 ms
 Memory Usage: 13.9 MB
 时间空间效率都属于低段。
 
-[back](https://github.com/Xingkai98/Leetcode-Notes/blob/master/notes-src/1.md)
+[back](../notes-src/1.md)

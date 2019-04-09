@@ -28,9 +28,14 @@ public:
 ```
 #### 数据
 Runtime: 436 ms 属于最慢的
+
 Memory Usage: 9.3 MB 击败99.07%
+
 额。。时间最慢，空间最快。。
+
 基本可以推测出，还有一种主流的做法是正好相反：时间快，空间大的。
+
 估计是STL中的另一个数据结构。
 
-[back](https://github.com/Xingkai98/Leetcode-Notes/blob/master/notes-src/1.md)
+
+[back](../notes-src/1.md)
