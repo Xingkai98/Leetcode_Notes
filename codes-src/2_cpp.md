@@ -1,26 +1,40 @@
 ### 1
 ```C++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> res;
-        int target_t = 0;
-        //choose the first
-        for(auto i = nums.begin(); i != nums.end(); i++){
-            res.clear();
-            target_t = target - *i;
-            res.push_back((int)(i-nums.begin()));
-            
-            //choose the second
-            for(auto j = i+1; j != nums.end(); j++){
-                if(*j == target_t){
-                    res.push_back((int)(j-nums.begin()));
-                    break;
-                }
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        //addon 为进位数
+        int addon = l1->val + l2->val;
+        addon /= 10;
+        ListNode* res = new ListNode((l1->val + l2->val)%10);
+        ListNode* tmp = res;
+        
+        //这里注意条件还要加上addon大于0
+        //两个数均加到最高位的时候也不一定就是最高位
+        while(l1->next || l2->next || addon){
+            int raw_add = 0;
+            if(l1->next){
+                l1 = l1->next;
+                raw_add += l1->val;
             }
-            
-            if(res.size() == 2)
-                break;
+            if(l2->next){
+                l2 = l2->next;
+                raw_add += l2->val;
+            }
+            //这里注意，最后结果必须10以内，所以取余在外边而不是里边
+            //tmp->next = new ListNode(raw_add%10 + addon);
+            int real_add = raw_add + addon;
+            tmp->next = new ListNode(real_add % 10);
+            addon = real_add / 10;
+            tmp = tmp->next;
         }
         return res;
     }
