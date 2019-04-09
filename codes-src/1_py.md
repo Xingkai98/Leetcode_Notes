@@ -20,8 +20,9 @@ class Solution:
                     return res
 ```
 #### 数据
-Runtime: 3972 ms
-Memory Usage: 13.9 MB
-时间空间效率都属于低段。
+Runtime: 3972 ms<br/>
+Memory Usage: 13.9 MB<br/>
+时间空间效率都属于低段。<br/>
 
+#
 [back](../notes-src/1.md)
