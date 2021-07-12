@@ -1,2 +1,2 @@
-# MyLeetcodePlayground
-我的Leetcode解答的存档。
+# my-leetcode
+我的Leetcode解答合集。
